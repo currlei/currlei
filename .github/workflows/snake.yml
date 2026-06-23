@@ -19,8 +19,8 @@ jobs:
         with:
           github_user_name: currlei
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%23E75480&color_dots=1B1B3A,1B1B3A,E75480,E75480,E75480&color_dot_border=1B1B3A
-            dist/github-contribution-grid-snake-dark.svg?color_snake=%23E75480&color_dots=1B1B3A,1B1B3A,E75480,E75480,E75480&color_dot_border=ffffff
+            dist/github-contribution-grid-snake.svg?color_snake=%23E75480&color_dots=ebedf0,FFD6E8,FFA6C9,E75480,1B1B3A&color_dot_border=d0d7de
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23E75480&color_dots=1B1B3A,3a3a5e,E75480,FF8FB3,FFD6E8&color_dot_border=30363d
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
