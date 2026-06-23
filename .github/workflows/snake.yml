@@ -2,8 +2,8 @@ name: generate animated snake
 
 on:
   schedule:
-    - cron: "0 0 * * *" # runs once a day
-  workflow_dispatch: {} # lets you trigger it manually
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
   push:
     branches:
       - main
@@ -19,8 +19,8 @@ jobs:
         with:
           github_user_name: currlei
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=%23E75480&color_dots=1B1B3A,1B1B3A,E75480,E75480,E75480&color_dot_border=1B1B3A
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23E75480&color_dots=1B1B3A,1B1B3A,E75480,E75480,E75480&color_dot_border=ffffff
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
