@@ -2,8 +2,8 @@ name: generate animated snake
 
 on:
   schedule:
-    - cron: "0 0 * * *" # runs once a day
-  workflow_dispatch: {} # lets you trigger it manually
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -14,15 +14,22 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: yourusername
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+    timeout-minutes: 5
 
-      - uses: crazy-max/ghaction-github-pages@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk@v3
+        with:
+          github_user_name: currlei
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=%23E75480&color_dots=%23ebedf0,%23fad1df,%23f6a9c2,%23ef7ca1,%23E75480
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23E75480&color_dots=%231B1B3A,%232E2E58,%235C3B63,%23B04E78,%23E75480
+
+      - name: Push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
