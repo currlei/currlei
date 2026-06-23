@@ -1,30 +1,33 @@
 name: generate animated snake
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch: {}
-  push:
-    branches:
-      - main
+schedule:
+- cron: "0 0 * * *"
+workflow_dispatch:
+push:
+branches:
+- main
 
 permissions:
-  contents: write
+contents: write
 
 jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: currlei
-          outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%23E75480&color_dots=ebedf0,FFD6E8,FFA6C9,E75480,1B1B3A&color_dot_border=d0d7de
-            dist/github-contribution-grid-snake-dark.svg?color_snake=%23E75480&color_dots=1B1B3A,3a3a5e,E75480,FF8FB3,FFD6E8&color_dot_border=30363d
+generate:
+runs-on: ubuntu-latest
 
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+steps:
+  - uses: Platane/snk@v3
+    with:
+      github_user_name: currlei
+      outputs: |
+        dist/github-contribution-grid-snake.svg?color_snake=%23E75480&color_dots=ebedf0,fad1df,f6a9c2,ef7ca1,E75480
+        dist/github-contribution-grid-snake-dark.svg?color_snake=%23E75480&color_dots=1B1B3A,2E2E58,5C3B63,B04E78,E75480
+
+  - uses: crazy-max/ghaction-github-pages@v4
+    with:
+      target_branch: output
+      build_dir: dist
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
