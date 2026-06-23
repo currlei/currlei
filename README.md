@@ -1,3 +1,4 @@
+<a name="top"></a>
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1B1B3A,100:E75480&height=200&section=header&text=Hi%20There!%20I'm%20Lorein&fontSize=38&fontColor=ffffff&animation=fadeIn&desc=Aspiring%20Project%20Manager%20%C2%B7%20QA%20%C2%B7%20UI%2FUX%20Designer&descAlignY=58&descSize=16&fontAlignY=35" />
@@ -232,7 +233,7 @@ Thank you for taking the time to explore my digital playground. I am always open
 
 
 <p align="center">
-  <a href="#hi-there-im-lorein"><b>𑣲⋆ Back to Top ↑</b></a>
+  <a href="#top"><b>𑣲⋆ Back to Top ↑</b></a>
 </p>
 
 
