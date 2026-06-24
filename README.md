@@ -23,7 +23,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-1B1B3A?style=for-the-badge&logo=instagram&logoColor=ffffff)](https://www.instagram.com/curr_lei/)
 <!--[![Portfolio](https://img.shields.io/badge/Portfolio-1B1B3A?style=for-the-badge&logo=about-dot-me&logoColor=E75480)](https://yourportfolio.com)  IN PROGRESS-->
 
-<img src="https://raw.githubusercontent.com/currlei/currlei/main/assets/progress-track.svg" alt="To Do, In Progress, Done, Sleep status track" width="480" />
+<img src="https://raw.githubusercontent.com/currlei/currlei/main/assets/progress-track.svg?v=2" alt="To Do, In Progress, Done, Sleep status track" width="480" /> 
 
 <sub align="center"><i> ᯓ★ how every project on this page got here ᯓ★ </i></sub>
 
