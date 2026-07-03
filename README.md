@@ -146,10 +146,6 @@ An enterprise-grade e-governance platform designed to eliminate manual data silo
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=currlei&show_icons=true&theme=transparent&hide_border=true&title_color=E75480&icon_color=E75480&text_color=1B1B3A&bg_color=00000000" width="410" alt="currlei stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=currlei&theme=transparent&hide_border=true&ring=E75480&fire=E75480&currStreakLabel=E75480&background=00000000&sideLabels=1B1B3A&dates=1B1B3A&currStreakNum=1B1B3A&sideNums=1B1B3A" width="410" alt="currlei streak" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=currlei&layout=compact&theme=transparent&hide_border=true&title_color=E75480&text_color=1B1B3A&bg_color=00000000" width="410" alt="currlei top languages" />
-</div>
 
 </div>
 <img width="100%" height="6" src="https://raw.githubusercontent.com/currlei/currlei/main/assets/divider.svg" alt="" />
